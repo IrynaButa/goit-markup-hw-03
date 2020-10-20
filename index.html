@@ -10,17 +10,17 @@
    
 </head>
 <body>
-    <div class="container">
+    <div>
     <header class="header">
     <nav> 
         <a href="" class="logo link"> <span class="logo-text-web">Web</span>Studio</a>
-    <ul class="list">
+    <ul class="list pages-box">
         <li> <a href="./index.html" class="link header-link"> Студия </a> </li>
         <li> <a href="./portfolio.html" class="link header-link"> Портфолио</a>  </li>
         <li> <a href="#footer" class="link header-link"> Контакты</a> </li>
     </ul>
     </nav>
-    <ul class="list"> 
+    <ul class="list contacts-box"> 
         <li> <a href="mailto:info@devstudio.com" class="link contacts-link">info@devstudio.com </a>  </li>
         <li> <a href="tel:380961111111" class="link contacts-link"> +38 096 111 11 11</a></li>
     </ul>
@@ -29,8 +29,8 @@
  <main>
      <!-- section hero -->
     <section class="hero-section">
-        <div class="container">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <div class="container hero-container">
+        <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
         <button type="button" class="hero-button"> Заказать услугу </button> 
     </div>
     </section>
@@ -38,7 +38,7 @@
     <div class="container">
     <section class="about-us-section">
         <h2 hidden> особенности нашей работы</h2>
-        <ul class="list">
+        <ul class="list about-us-block">
             <li>
                 <h3 class="title about-us-title">Внимание к деталям</h3>
                 <p class="about-us-info">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
@@ -62,15 +62,15 @@
     <div class="container">
     <section class="what-we-do-section">
         <h2 class="title what-we-do-title">Чем мы занимаемся</h2>
-    <ul class="list">
+    <ul class="list what-we-do-img">
         <li>
-            <a href="">  <img src="./images/img.jpg" alt="1" width="180" height="210"></a>
+            <a href="">  <img src="./images/img.jpg" alt="1" height="294"></a>
         </li>
         <li>
-            <a href=""> <img src="./images/img2.jpg" alt="2" width="180" height="210"></a>
+            <a href=""> <img src="./images/img2.jpg" alt="2" height="294"></a>
         </li>
         <li>
-            <a href=""> <img src="./images/img3.jpg" alt="3" width="180" height="210"></a>
+            <a href=""> <img src="./images/img3.jpg" alt="3" height="294"></a>
         </li>
     </ul>
     
@@ -81,27 +81,34 @@
         <section class="our-team-section">
             <div class="container">
             <h2 class="title our-team-title">Наша команда</h2>
-            <ul class="list">
+            <ul class="list team-block">
                 <li class="team-card">
-                    <a href=""><img src="./images/imgpm.jpg" alt="фото-игоря" width="280" height="310"></a>
+                    <a href=""><img src="./images/imgpm.jpg" alt="фото-игоря" height="260"></a>
+                    <div class="name-position">
                     <h3 class="title name-our-team">Игорь Демьяненко</h3>
                     <p lang="en" class="position-our-team"> Product Designer</p>
-    
+                </div>
                 </li>
                 <li class="team-card">
-                    <a href=""><img src="./images/imgfd.jpg" alt="фото-ольги" width="280" height="310"></a>
+                    <a href=""><img src="./images/imgfd.jpg" alt="фото-ольги" height="260"></a>
+                    <div class="name-position">
                     <h3 class="title name-our-team">Ольга Репина</h3>
                     <p lang="en" class="position-our-team"> Frontend Developer</p>
+                </div>
                 </li>
                 <li class="team-card">
-                    <a href=""><img src="./images/imgm.jpg" alt="фото-николая" width="280" height="310"></a>
+                    <a href=""><img src="./images/imgm.jpg" alt="фото-николая" height="260"></a>
+                    <div class="name-position">
                     <h3 class="title name-our-team">Николай Тарасов</h3>
                     <p lang="en" class="position-our-team"> Marketing</p>
+                    </div>
                 </li>
                 <li class="team-card">
-                    <a href=""><img src="./images/imgui.jpg" alt="фото-михаила" width="280" height="310"></a>
+                    <a href=""><img src="./images/imgui.jpg" alt="фото-михаила" height="260"></a>
+                    <div class="name-position">
                     <h3 class="title name-our-team">Михаил Ермаков</h3>
                     <p lang="en" class="position-our-team"> UI Designer</p>
+                </div>
                 </li>
             </ul>
         </div>
@@ -110,12 +117,14 @@
  </main>
  
  <footer id="footer" class="footer-section" >
-    <div class="container">
+    <div>
     <a href="" class="logo logo-footer link"> <span class="logo-text-web">Web</span>Studio</a>
-    <address class="adress">
-       <span class="adress-place"> г. Киев, пр-т Леси Украинки, 26</span> 
-        info@example.com
-        +38 099 111 11 11
+    <address>
+        <ul class="list">
+            <li> <a href="https://goo.gl/maps/kVWGbVpcU5Uk7s2LA" class="link adress-place adress"> г. Киев, пр-т Леси Украинки, 26</a> </li>
+            <li> <a href="mailto:info@example.com" class="link contacts-link adress">info@example.com</a>  </li>
+            <li> <a href="tel:380961111111" class="link contacts-link adress"> +38 096 111 11 11</a></li>
+        </ul>
     </address>
 </div>
  </footer>
