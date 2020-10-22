@@ -9,58 +9,59 @@
     <link rel="stylesheet" href="./css/style.css">
    
 </head>
-<body>
-    <div>
-    <header class="header">
-    <nav> 
+<body> 
+    <header class="header container"> 
+        <nav class="main-nav"> 
         <a href="" class="logo link"> <span class="logo-text-web">Web</span>Studio</a>
-    <ul class="list pages-box">
-        <li> <a href="./index.html" class="link header-link"> Студия </a> </li>
-        <li> <a href="./portfolio.html" class="link header-link"> Портфолио</a>  </li>
-        <li> <a href="#footer" class="link header-link"> Контакты</a> </li>
+    <ul class="list nav-box">
+        <li class="item"> <a href="./index.html" class="link header-link"> Студия </a> </li>
+        <li class="item"> <a href="./portfolio.html" class="link header-link"> Портфолио</a>  </li>
+        <li class="item"> <a href="#footer" class="link header-link"> Контакты</a> </li>
+    </ul>
+    <ul class="list contacts-box"> 
+        <li class="item"> <a href="mailto:info@devstudio.com" class="link contacts-link">info@devstudio.com </a>  </li>
+        <li class="item"> <a href="tel:380961111111" class="link contacts-link"> +38 096 111 11 11</a></li>
     </ul>
     </nav>
-    <ul class="list contacts-box"> 
-        <li> <a href="mailto:info@devstudio.com" class="link contacts-link">info@devstudio.com </a>  </li>
-        <li> <a href="tel:380961111111" class="link contacts-link"> +38 096 111 11 11</a></li>
-    </ul>
     </header>
-</div>
  <main>
      <!-- section hero -->
     <section class="hero-section">
         <div class="container hero-container">
-        <h1 class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
+        <h1 class="hero-title" >Эффективные решения для вашего бизнеса</h1>
         <button type="button" class="hero-button"> Заказать услугу </button> 
     </div>
     </section>
     <!-- section about us -->
-    <div class="container">
+    
     <section class="about-us-section">
+    <div class="container">
         <h2 hidden> особенности нашей работы</h2>
         <ul class="list about-us-block">
-            <li>
+            <li class="item">
                 <h3 class="title about-us-title">Внимание к деталям</h3>
                 <p class="about-us-info">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
-            <li>
+            <li class="item">
                 <h3 class="title about-us-title">Пунктуальность</h3>
                 <p class="about-us-info">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
-            <li>
+            <li class="item">
                 <h3 class="title about-us-title">Планирование</h3>
                 <p class="about-us-info">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
-            <li>
+            <li class="item">
                 <h3 class="title about-us-title">Современные технологии</h3>
                 <p class="about-us-info">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
         </ul>
+    </div>
     </section>
-</div>
+
     <!-- section what we do -->
-    <div class="container">
+   
     <section class="what-we-do-section">
+        <div class="container">
         <h2 class="title what-we-do-title">Чем мы занимаемся</h2>
     <ul class="list what-we-do-img">
         <li>
@@ -116,14 +117,14 @@
     
  </main>
  
- <footer id="footer" class="footer-section" >
-    <div>
+ <footer id="footer" class="footer-section " >
+    <div class="container footer-container">
     <a href="" class="logo logo-footer link"> <span class="logo-text-web">Web</span>Studio</a>
-    <address>
-        <ul class="list">
-            <li> <a href="https://goo.gl/maps/kVWGbVpcU5Uk7s2LA" class="link adress-place adress"> г. Киев, пр-т Леси Украинки, 26</a> </li>
-            <li> <a href="mailto:info@example.com" class="link contacts-link adress">info@example.com</a>  </li>
-            <li> <a href="tel:380961111111" class="link contacts-link adress"> +38 096 111 11 11</a></li>
+    <address class="adress">
+        <ul class="list adress-bottom">
+            <li> <a href="https://goo.gl/maps/kVWGbVpcU5Uk7s2LA" class="link adress-place "> г. Киев, пр-т Леси Украинки, 26</a> </li>
+            <li class="bottom-link"> <a href="mailto:info@example.com" class="link bottom-link">info@example.com</a>  </li>
+            <li class="bottom-link"> <a href="tel:380961111111" class="link bottom-link"> +38 096 111 11 11</a></li>
         </ul>
     </address>
 </div>
