@@ -58,12 +58,14 @@ body{
 
  
 }
-/* img {
+img {
     display: block;
     max-width: 100%;
     height: auto;
-  } */
-
+  }
+address{
+    font-style: normal;
+}
 .link{
     text-decoration: none;
 }
@@ -86,13 +88,17 @@ body{
 
 }
 /* header */
-.header{
+.header-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     padding-top: 0;
     padding-bottom: 0;
-}
+    }
 .main-nav{
     display: flex;
     align-items: center;
+    margin-right: auto;
     letter-spacing: 0.02em;
 }
 .logo{
@@ -131,7 +137,7 @@ body{
 
 .contacts-box{
     display: flex;
-    margin-left: auto;
+   
 }
 .contacts-box .item + .item{
     margin-left: 50px; 
@@ -150,14 +156,14 @@ body{
 /* hero */
 .hero-section{
     background-color: var(--footer-color);
-    letter-spacing: 0.06em;
-    
+   
 }
 .hero-container{
     max-width: 650px;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    letter-spacing: 0.06em;
     
 }
 .hero-title{
@@ -166,7 +172,6 @@ body{
     font-weight: 900;
     line-height: 1.36;
     text-transform: uppercase;
-    text-align: center;
     margin-bottom: 30px;
 
 }
@@ -177,7 +182,11 @@ body{
     font-size: 16px;
     font-weight: 700;
     line-height: 1.87;
+    border-style: none;
     padding: 10px 32px;
+    border-radius: 4px;
+   
+
 }
 .hero-button:hover,
 .hero-button:focus{
@@ -189,10 +198,11 @@ body{
 
 .about-us-block{
     display: flex; 
+    /* justify-content: space-evenly; */
     
 }
 .about-us-block .item{
-    width: 270px;
+    max-width: 270px;
     margin-right: 30px;
 }
 .about-us-block .item:last-child {
@@ -205,12 +215,10 @@ body{
 }
 
 .about-us-info{
-    color:var(--second-text-color);    
+    color:var(--second-text-color);  
+    line-height: 1.7;  
 }
 
-.about-us-info{
-    line-height: 1.7;
-}
 
 /* what we do */
 
@@ -224,19 +232,16 @@ body{
     font-weight: 700;
     line-height: 1.16;
     text-align: center;
-   
     padding-bottom: 50px;
 }
 .what-we-do-img{
     display: flex;
   
 }
-.what-we-do-img li{
+.what-we-do-img .item:not(:last-child){
     margin-right: 30px;
 }
-.what-we-do-img:last-child {
-    margin-right: 0;
-}
+
 /* our team */
 .our-team-section{
     background-color: var(--bgn-gray-color);
@@ -245,16 +250,18 @@ body{
     display: flex;
 }
 .team-card{
-    height: 368px;
-    background-color: var(--bgn-white-color);
-    line-height: 1.18;
-    font-size: 16px;
+    /* height: 368px; */
     margin-right: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
     
 }
 .team-card:last-child{
     margin-right: 0;
 }
+/* .team-block .team-card:not(:last-child){
+    margin-right: 30px;
+} */
 .name-our-team{
     font-weight: 500; 
     margin-bottom: 10px;    
@@ -264,6 +271,9 @@ body{
     color:var(--second-text-color);    
 } 
 .name-position{
+    background-color: var(--bgn-white-color);
+    line-height: 1.18;
+    font-size: 16px;
     padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
@@ -290,13 +300,13 @@ body{
     padding: 6px 22px;
     border-style: none;
     border-radius: 4px;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
      
 }
 .filter-button:hover,
 .filter-button:focus{
     background-color: var(--button-blue); 
-    color: var(--bgn-white-color); 
+    color: var(--bgn-white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12); 
 }
 /* <!-- section projects preview--> */
 
@@ -305,11 +315,11 @@ body{
     flex-wrap: wrap;
 }
 
-.our-project-card{
+/* .our-project-card{
     width: 370px;
-    border: 1px solid #EEEEEE;
- 
-}
+    background-color: red;
+    
+} */
 
 .our-project-card:not(:nth-child(3n)){
     margin-right: 30px;
@@ -318,24 +328,27 @@ body{
     margin-bottom: 30px;
 
 }
+.project-card-content{
 
+    border-right: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;
+    padding: 20px 24px;
+    
+}
 .our-project-title{
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    padding-top: 20px;
-    padding-bottom: 2px;
-    padding-right: 24px;
-    padding-left: 24px;
 
 }
 .our-project-topic{
     font-size: 16px;
     line-height: 1.87;
-    padding-top: 2px;
+    /* padding-top: 2px;
     padding-bottom: 20px;
     padding-right: 24px;
-    padding-left: 24px;
+    padding-left: 24px; */
 }
 /* footer */
 
@@ -344,7 +357,7 @@ body{
     
 }
 .footer-container{ 
-padding-top: 60px;
+    padding-top: 60px;
     padding-bottom: 60px;
 }
 .logo-footer{
@@ -354,14 +367,10 @@ padding-top: 60px;
   
 }
 
-.adress{
-    font-style: normal;
-    line-height: 1.71;    
-}
-
 .adress-bottom{
     display: flex;
     flex-direction: column;  
+    line-height: 1.71; 
 }
 
 .adress-place{

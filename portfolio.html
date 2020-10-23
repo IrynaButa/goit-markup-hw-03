@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    <header class="header container"> 
+    <header> 
+        <div class="container header-container">
         <nav class="main-nav"> 
         <a href="./index.html" class="logo link"> <span class="logo-text-web">Web</span>Studio</a>
     <ul class="list nav-box">
@@ -17,11 +18,12 @@
         <li class="item"> <a href="./portfolio.html" class="link header-link"> Портфолио</a>  </li>
         <li class="item"> <a href="#footer" class="link header-link"> Контакты</a> </li>
     </ul>
+</nav>
     <ul class="list contacts-box"> 
         <li class="item"> <a href="mailto:info@devstudio.com" class="link contacts-link">info@devstudio.com </a>  </li>
         <li class="item"> <a href="tel:380961111111" class="link contacts-link"> +38 096 111 11 11</a></li>
     </ul>
-    </nav>
+    </div>
     </header>
         <main>
         <!-- section filter -->
@@ -39,48 +41,66 @@
     <ul class="list project-list">
         <li class="our-project-card">
             <a href=""><img src="./images/imgtehno.jpg" alt="Технокряк" ></a>
-            <h3 class="title our-project-title">Технокряк</h3>
+            <div class="project-card-content">
+            <h2 class="title our-project-title">Технокряк</h2>
             <p class="our-project-topic"> Веб-сайт</p>
+        </div>
         </li>
         <li class="our-project-card">
             <a href=""><img src="./images/imggoldenstar.jpg" alt="Постер New Orlean vs Golden Star"></a>
-            <h3 class="title our-project-title">Постер New Orlean vs Golden Star</h3>
+            <div class="project-card-content">
+            <h2 class="title our-project-title">Постер New Orlean vs Golden Star</h2>
             <p class="our-project-topic"> Дизайн</p>
+        </div>
         </li>
         <li class="our-project-card">
              <a href=""><img src="./images/imgseafood.jpg" alt="Ресторан Seafood"></a>
-            <h3 class="title our-project-title">Ресторан Seafood</h3>
+             <div class="project-card-content">
+             <h2 class="title our-project-title">Ресторан Seafood</h2>
             <p class="our-project-topic"> Приложение</p>
+        </div>
         </li>
         <li class="our-project-card">
             <a href=""><img src="./images/imgprime.jpg" alt="Проект Prime"></a>
-            <h3 class="title our-project-title">Проект Prime</h3>
+            <div class="project-card-content">
+            <h2 class="title our-project-title">Проект Prime</h2>
             <p class="our-project-topic"> Маркетинг</p>
+        </div>
         </li>
         <li class="our-project-card">
             <a href=""><img src="./images/imgboxes.jpg" alt="Проект Boxes"></a>
-            <h3 class="title our-project-title">Проект Boxes</h3>
+            <div class="project-card-content">
+            <h2 class="title our-project-title">Проект Boxes</h2>
             <p class="our-project-topic"> Приложение</p>
+        </div>
         </li>
         <li class="our-project-card">
             <a href=""><img src="./images/imginspiratios.jpg" alt="Inspiration has no Borders"></a>
-            <h3 class="title our-project-title">Inspiration has no Borders</h3>
+            <div class="project-card-content">
+            <h2 class="title our-project-title">Inspiration has no Borders</h2>
             <p class="our-project-topic"> Веб-сайт</p>
+        </div>
         </li>
         <li class="our-project-card">
              <a href=""><img src="./images/imglimedition.jpg" alt="Издание Limited Edition"></a>
-            <h3 class="title our-project-title">Издание Limited Edition</h3>
+             <div class="project-card-content">
+             <h2 class="title our-project-title">Издание Limited Edition</h2>
             <p class="our-project-topic"> Дизайн</p>
+        </div>
         </li>
         <li class="our-project-card">
             <a href=""><img src="./images/imglab.jpg" alt="Проект LAB"></a>
-            <h3 class="title our-project-title">Проект LAB</h3>
+            <div class="project-card-content">
+            <h2 class="title our-project-title">Проект LAB</h2>
             <p class="our-project-topic"> Маркетинг</p>
+        </div>
         </li>
         <li class="our-project-card">
-             <a href=""><img src="./images/imggowbuss.jpg" alt="Growing Business"></a>
-            <h3 class="title our-project-title">Growing Business</h3>
+            <a href=""><img src="./images/imggowbuss.jpg" alt="Growing Business"></a>
+             <div class="project-card-content">
+            <h2 class="title our-project-title">Growing Business</h2>
             <p class="our-project-topic"> Приложение</p>
+            </div>
         </li>
        
     </ul>
@@ -90,7 +110,7 @@
 <footer id="footer" class="footer-section " >
     <div class="container footer-container">
     <a href="" class="logo logo-footer link"> <span class="logo-text-web">Web</span>Studio</a>
-    <address class="adress">
+    <address>
         <ul class="list adress-bottom">
             <li> <a href="https://goo.gl/maps/kVWGbVpcU5Uk7s2LA" class="link adress-place "> г. Киев, пр-т Леси Украинки, 26</a> </li>
             <li class="bottom-link"> <a href="mailto:info@example.com" class="link bottom-link">info@example.com</a>  </li>
