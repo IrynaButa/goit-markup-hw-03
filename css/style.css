@@ -125,13 +125,15 @@ address{
     display: block;
     padding-top: 33px;
     padding-bottom: 33px;
-
     color: var(--main-text-color);  
     font-weight: 500;
 
 }
 .header-link:hover,
 .header-link:focus{
+    color: var(--button-blue);
+}
+.current{
     color: var(--button-blue);
 }
 
